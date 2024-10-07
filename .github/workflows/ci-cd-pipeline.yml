@@ -8,6 +8,7 @@ on:
     branches:
       - master
 
+# Test
 jobs:
   TagCreation:
     if: github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'Release')
